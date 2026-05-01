@@ -1,23 +1,28 @@
-let nama = "Jaka";      // bisa berubah
-const umur = 17;        // tidak berubah
-const tambah = (a, b) => a + b;
+// STEP 2
+let nama = "Jaka";
+const umur = 17;
 
-console.log(nama);       // Output: Jaka
-console.log(umur);       // Output: 17
-console.log(tambah(5, 3)); // Output: 8
+// STEP 3
+const hitung = (a, b) => a + b;
 
+// STEP 4
+console.log(`Nama: ${nama}, Umur: ${umur}`);
+
+// STEP 5
+
+// destructuring
 const user = {
     nama: "Jaka",
     umur: 17
 };
 
 const { nama: n, umur: u } = user;
-console.log(n, u);
+console.log("Destructuring:", n, u);
 
 // spread
 const angka = [1, 2, 3];
 const angkaBaru = [...angka, 4, 5];
-console.log(angkaBaru);
+console.log("Spread:", angkaBaru);
 
 // default parameter
 const sapa = (nama = "Guest") => {
@@ -26,3 +31,6 @@ const sapa = (nama = "Guest") => {
 
 sapa();
 sapa("Ihsan");
+
+// function test
+console.log("Hasil hitung:", hitung(5, 3));
